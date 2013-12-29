@@ -5,33 +5,33 @@
 
 int main() 
 {   
-    int c , state;
+  int c , state;
 	
-	while((c = getchar()) != EOF){
-		state = FALSE;
+  while((c = getchar()) != EOF) {
+    state = FALSE;
 		
-                if (c == '\t') {
+    if (c == '\t') {
         	
-			putchar('\t');
-			state = TRUE;
-		} else 
-		if (c == '\b') {
+      putchar('\t');
+      state = TRUE;
+    }else
+      if (c == '\b') {
 			
-			putchar('\b');
-			state = TRUE;
-		} else
-		if (c == ' \ ')	{
+        putchar('\b');
+        state = TRUE;
+      } else
+        if (c == ' \ ')	{
 			
-			putchar('\\');
-			state = TRUE;
-		} else
-		if (state == FALSE) {
-			putchar(c);
-		}
-	}
+          putchar('\\');
+          state = TRUE;
+        } else
+          if (state == FALSE) {
+            putchar(c);
+          }
+  }
 	
-	system("PAUSE");
-	return 0;  
+  system("PAUSE");
+  return 0;  
 }   
 	
 
